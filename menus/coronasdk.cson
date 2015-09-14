@@ -5,19 +5,19 @@
       'label': 'Corona SDK'
       'submenu': [
         'label': 'Create'
-        'command': 'coronakit:create'
+        'command': 'coronasdk:start'
       ]
     }
   ]
 'menu': [
   {
-    'label': 'Packages'
+    'label': 'CoronaSDK'
     'submenu': [
       'label': 'Corona SDK'
       'submenu': [
         {
           'label': 'Create'
-          'command': 'coronakit:create'
+          'command': 'coronasdk:start'
         }
       ]
     ]

@@ -1,11 +1,11 @@
 {
-  "name": "coronakit",
-  "main": "./lib/coronakit",
+  "name": "coronasdk",
+  "main": "./lib/coronasdk",
   "version": "0.1.0",
   "description": "A pre-built project directory for Corona SDK",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "coronakit:create"
+    "atom-workspace": "coronadk:create"
   },
   "repository": "https://github.com/develephant/atom-corona-sdk",
   "license": "MIT",
