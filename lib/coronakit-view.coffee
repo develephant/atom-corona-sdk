@@ -1,5 +1,5 @@
 module.exports =
-class CoronakitView
+class CoronaKitView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')

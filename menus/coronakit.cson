@@ -2,19 +2,22 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle coronakit'
-      'command': 'coronakit:toggle'
+      'label': 'Corona Kit'
+      'submenu': [
+        'label': 'Create'
+        'command': 'coronakit:create'
+      ]
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'coronakit'
+      'label': 'Corona Kit'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'coronakit:toggle'
+          'label': 'Create'
+          'command': 'coronakit:create'
         }
       ]
     ]

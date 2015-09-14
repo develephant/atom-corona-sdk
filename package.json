@@ -1,18 +1,18 @@
 {
   "name": "coronakit",
   "main": "./lib/coronakit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A prebuld project directory for Corona SDK",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "coronakit:toggle"
+    "atom-workspace": "coronakit:create"
   },
-  "repository": "https://github.com/atom/coronakit",
+  "repository": "https://github.com/develephant/coronakit",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "nodegit": "^0.4.1"
   }
 }

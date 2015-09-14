@@ -1,33 +1,23 @@
-CoronakitView = require './coronakit-view'
+CoronaKitCreate = require './coronakit-create'
 {CompositeDisposable} = require 'atom'
 
 module.exports = Coronakit =
-  coronakitView: null
-  modalPanel: null
+  coronaKitCreate: null
   subscriptions: null
 
   activate: (state) ->
-    @coronakitView = new CoronakitView(state.coronakitViewState)
-    @modalPanel = atom.workspace.addModalPanel(item: @coronakitView.getElement(), visible: false)
+    # Kit create module
+    @coronaKitCreate = new CoronaKitCreate()
 
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'coronakit:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'coronakit:create': => @create()
 
   deactivate: ->
-    @modalPanel.destroy()
     @subscriptions.dispose()
-    @coronakitView.destroy()
 
-  serialize: ->
-    coronakitViewState: @coronakitView.serialize()
-
-  toggle: ->
-    console.log 'Coronakit was toggled!'
-
-    if @modalPanel.isVisible()
-      @modalPanel.hide()
-    else
-      @modalPanel.show()
+  create: ->
+    console.log 'call'
+    @coronaKitCreate.start()
