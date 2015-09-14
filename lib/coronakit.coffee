@@ -19,5 +19,4 @@ module.exports = Coronakit =
     @subscriptions.dispose()
 
   create: ->
-    console.log 'call'
     @coronaKitCreate.start()

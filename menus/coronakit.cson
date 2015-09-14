@@ -2,7 +2,7 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Corona Kit'
+      'label': 'Corona SDK'
       'submenu': [
         'label': 'Create'
         'command': 'coronakit:create'
@@ -13,7 +13,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Corona Kit'
+      'label': 'Corona SDK'
       'submenu': [
         {
           'label': 'Create'
